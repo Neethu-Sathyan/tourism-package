@@ -3,7 +3,7 @@ import os
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
 api.upload_folder(
-    folder_path="/tourism_project/hosting",
-    repo_id="Neethu-Sathyan/Tourism-project",
+    folder_path="tourism-project/hosting",
+    repo_id="Neethu-Sathyan/tourism-project",
     repo_type="space"
 )
