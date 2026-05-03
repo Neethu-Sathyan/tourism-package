@@ -137,7 +137,7 @@ with mlflow.start_run():
     })
 
     # Save the model locally
-    model_path = "/content/drive/MyDrive/GreatLearning/Advanced  machine learning and MLOPS/Assessment/tourism_project/model_building/best_tourism_model_v1.joblib"
+    model_path = "best_tourism_model_v1.joblib"
     joblib.dump(best_model, model_path)
 
     # Log the model artifact
@@ -159,7 +159,7 @@ with mlflow.start_run():
 
     # create_repo("tourism-model", repo_type="model", private=False)
     api.upload_file(
-        path_or_fileobj="model_building/best_tourism_model_v1.joblib",
+        path_or_fileobj="best_tourism_model_v1.joblib",
         path_in_repo="best_tourism_model_v1.joblib",
         repo_id=repo_id,
         repo_type=repo_type,
